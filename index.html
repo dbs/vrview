@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>VR view</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-    <div id="error" class="dialog">
-      <div class="wrap">
-        <h1 class="title">Error</h1>
-        <p class="message">An unknown error occurred.</p>
-      </div>
-    </div>
+<html>
+  <head>
+    <title>Laurentian University VR</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link href="//fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet" type="text/css">
+    <link href="examples/style.css" rel="stylesheet" type="text/css">
+    <style>
+    </style>
+  </head>
 
-    <a id="watermark" href="http://g.co/vr/view" target="_blank">
-      <img src="images/ic_info_outline_black_24dp.svg"/>
-    </a>
+  <body>
 
-    <script src="build/vrview-analytics.min.js"></script>
-	</body>
+    <h1>Laurentian University VR</h1>
+    <h2>Classroom building</h2>
+    <p>The classroom building, renovated in 2016, offers flexible spaces,
+    furniture, and technology to support modern teaching approaches.</p>
+
+    <iframe width="100%" scrolling="no" allowfullscreen
+      src="view.html?image=examples/lul/classroom.jpg"></iframe>
+
+    <p class="caption">A 360 panoramic view of a renovated classroom</p>
+
+  </body>
+
 </html>
