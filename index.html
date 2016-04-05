@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Laurentian University VR</title>
+    <title>Welcome - Laurentian University VR</title>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
-    <link href="//fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet" type="text/css">
-    <link href="examples/style.css" rel="stylesheet" type="text/css">
     <style>
+    h1, h2, h3 {
+        font-family: Arial;
+        background-color: blue;
+        color: white;
+        padding: 0.5em;
+    }
+    h1.welcome {
+        display: inline-block;
+        position: absolute;
+        z-index: 2;
+        top: 0px;
+        left: 0px;
+        margin-left: 30%;
+    }
+    a.menuitem {
+        display: inline-block;
+        float: left;
+        margin-right: 1em;
+    }
     </style>
   </head>
 
   <body>
 
-    <h1>Laurentian University VR</h1>
-    <h2>Classroom building</h2>
-    <p>The classroom building, renovated in 2016, offers flexible spaces,
-    furniture, and technology to support modern teaching approaches.</p>
-
-    <iframe width="100%" scrolling="no" allowfullscreen
-      src="view.html?image=examples/lul/classroom.jpg"></iframe>
-
-    <p class="caption">A 360 panoramic view of a renovated classroom</p>
-
-    <iframe width="100%" scrolling="no" allowfullscreen
-      src="view.html?image=examples/lul/classroom_stereo_360_im.jpg?is_stereo=true"></iframe>
-
-    <p class="caption2">A stereo 360 panoramic view of a renovated classroom: Cardboard?</p>
+    <div style="position: relative">
+        <img style="position: absolute; top: 0px; left: 0px; z-index: 1; width: 100%" src="examples/lul/laurentian_welcome_sign.jpg" />
+        <h1 class="welcome">Welcome to Laurentian University</h1>
+        <div style="position: absolute; top: 700px; left: 50px; z-index: 2; width: 100%">
+            <a class="menuitem" href="examples/lul/brenda_wallace.html"><h2 style="margin: 0">Studying</h2><img src="examples/lul/brenda_wallace_small.jpg" /></a>
+            <a class="menuitem" href="examples/lul/founders_square.html"><h2 style="margin: 0">Campus</h2><img src="examples/lul/founders_square_small.jpg" /></a>
+            <a class="menuitem" href="examples/lul/index.html"><h2 style="margin: 0">Classrooms</h2><img src="examples/lul/classroom_small.jpg" /></a>
+        </div>
 
   </body>
 
